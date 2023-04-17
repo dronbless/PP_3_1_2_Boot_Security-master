@@ -30,7 +30,7 @@
     <br/>
     <label>Select role:
         <input type="checkbox" name="roles"
-               th:each="role : ${roles}"
+               th:each="role : ${allRoles}"
                th:value="${role.getId()}"
                th:text="${role.getName()}"
                th:field="*{roles}"
